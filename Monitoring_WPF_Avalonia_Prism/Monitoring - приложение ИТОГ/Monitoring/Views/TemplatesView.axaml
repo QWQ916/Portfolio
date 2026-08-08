@@ -1,0 +1,63 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Monitoring.ViewModels"
+             xmlns:data="using:Monitoring.Sharing.Data"
+             x:Class="Monitoring.Views.TemplatesView"
+             x:DataType="vm:TemplatesVM">
+  <StackPanel Margin="16" Spacing="16">
+    <Grid ColumnDefinitions="*,Auto" Margin="0,8">
+      <TextBlock Grid.Column="0" Text="Шаблоны" FontSize="24" FontWeight="Bold" VerticalAlignment="Center"/>
+      <Border Grid.Column="1" Background="#E8F5E9" CornerRadius="12" Padding="12,4" VerticalAlignment="Center" BorderBrush="#000000" BorderThickness="1">
+        <TextBlock Text="{Binding CountText}" Foreground="#2E7D32" FontSize="16" FontWeight="SemiBold" />
+      </Border>
+    </Grid>
+
+    <Border CornerRadius="10" ClipToBounds="True"
+            BorderBrush="#E2E8F0" BorderThickness="1" Background="White">
+      <Grid RowDefinitions="Auto,*">
+
+        <!-- Закреплённая шапка -->
+        <Border Grid.Row="0" Background="#1E293B">
+          <Grid ColumnDefinitions="2*,4*,1.5*,2*">
+            <Border Grid.Column="0" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Имя" Foreground="White" FontWeight="SemiBold" Margin="18,12"/>
+            </Border>
+            <Border Grid.Column="1" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Описание" Foreground="White" FontWeight="SemiBold" Margin="18,12"/>
+            </Border>
+            <Border Grid.Column="2" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Версия ОС" Foreground="White" FontWeight="SemiBold" Margin="18,12"/>
+            </Border>
+            <Border Grid.Column="3">
+              <TextBlock Text="Создан" Foreground="White" FontWeight="SemiBold" Margin="18,12"/>
+            </Border>
+          </Grid>
+        </Border>
+
+        <!-- Строки -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Height="500">
+          <ItemsControl ItemsSource="{Binding Templates}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="data:OSTemplate">
+                <Grid ColumnDefinitions="2*,4*,1.5*,2*">
+                  <Border Grid.Column="0" Background="#F5F8FF" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontWeight="Bold" Text="{Binding Name}" Margin="18,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Name}"/>
+                  </Border>
+                  <Border Grid.Column="1" Background="#F4FBF5" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontStyle="Oblique" Text="{Binding Description}" Margin="18,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Description}"/>
+                  </Border>
+                  <Border Grid.Column="2" Background="#FFFBF2" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding GuestOsVersion}" Margin="18,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding GuestOsVersion}"/>
+                  </Border>
+                  <Border Grid.Column="3" Background="#FBF5FC" BorderBrush="#E8EDF2" BorderThickness="0,0,0,1">
+                    <TextBlock Text="{Binding CreationDate, StringFormat='{}{0:dd.MM.yyyy}'}" Margin="18,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                  </Border>
+                </Grid>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </ScrollViewer>
+      </Grid>
+    </Border>
+  </StackPanel>
+</UserControl>

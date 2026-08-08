@@ -1,0 +1,109 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Monitoring.ViewModels"
+             xmlns:widgets="using:Monitoring.Models.Widgets"
+             xmlns:shar="using:Monitoring.Sharing.Data"
+             xmlns:lvc="using:LiveChartsCore.SkiaSharpView.Avalonia"
+             x:Class="Monitoring.Views.DashBoardView"
+             x:DataType="vm:DashBoardVM">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        <ItemsControl ItemsSource="{Binding Widgets}" DoubleTapped="OnItemDoubleTapped">
+
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid ColumnDefinitions="*,*,*"
+                          RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <ItemsControl.Styles>
+                <Style Selector="ContentPresenter">
+                    <Setter Property="Grid.Row" Value="{ReflectionBinding Row}"/>
+                    <Setter Property="Grid.Column" Value="{ReflectionBinding Column}"/>
+                    <Setter Property="Grid.ColumnSpan" Value="{ReflectionBinding ColumnSpan}"/>
+                </Style>
+            </ItemsControl.Styles>
+
+            <ItemsControl.DataTemplates>
+
+                <DataTemplate DataType="widgets:InfoWidgetVM">
+                    <Border Margin="6" Padding="14" CornerRadius="8" Background="#F2F4F7" Cursor="Hand">
+                        <StackPanel Spacing="6">
+                            <TextBlock Text="{Binding Title}" FontWeight="Bold" TextAlignment="Center"/>
+                            <TextBlock Text="{Binding Value}" FontSize="25" Foreground="DarkBlue" FontWeight="Bold" TextAlignment="Center" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+
+                <DataTemplate DataType="widgets:StatusWidgetVM">
+                    <Border Margin="6" Padding="14" CornerRadius="8" Background="#F2F4F7" Cursor="Hand">
+                        <StackPanel Spacing="6">
+                            <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
+                            <CheckBox Content="Онлайн" IsChecked="{Binding IsOn}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+
+                <DataTemplate DataType="widgets:ProgressWidgetVM">
+                    <Border Margin="6" Padding="14" CornerRadius="8" Background="#F2F4F7" Cursor="Hand">
+                        <StackPanel Spacing="6">
+                            <TextBlock Text="{Binding Title}" TextAlignment="Center" FontWeight="Bold" FontSize="15" Margin="0, 25, 0, 25"/>
+                            <ProgressBar Foreground="{Binding Color}" Minimum="0" Maximum="100" Value="{Binding Progress}" Height="25" ShowProgressText="True" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+
+                <DataTemplate DataType="widgets:LineChartWidgetVM">
+                  <Border Margin="6" Padding="14" CornerRadius="8" Cursor="Hand" Background="#F2F4F7">
+                      <StackPanel Spacing="6">
+                          <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
+                          <lvc:CartesianChart Series="{Binding Series}"
+                                              XAxes="{Binding XAxes}"
+                                              Height="180"
+                                              YAxes="{Binding YAxes}"
+                                              Sections="{Binding Sections}"/>
+                      </StackPanel>
+                  </Border>
+                </DataTemplate>
+
+                <DataTemplate DataType="widgets:GaugeWidgetVM">
+                    <Border Margin="6" Padding="14" CornerRadius="8" Background="{Binding BackColor}" Cursor="Hand">
+                        <StackPanel Spacing="6">
+                            <TextBlock Text="{Binding Title}" FontWeight="SemiBold" TextAlignment="Center" FontSize="23" Foreground="Gray"/>
+
+                            <Grid Height="240">
+                                <!-- внешний: зоны + стрелка -->
+                                <lvc:PieChart InitialRotation="-225" MaxAngle="270"
+                                              MinValue="0" MaxValue="{Binding Max}">
+                                    <lvc:PieChart.Series>
+                                        <lvc:XamlAngularGaugeSeries GaugeValue="{Binding GreenSize}"  MaxRadialColumnWidth="5" Fill="#3BB273"/>
+                                        <lvc:XamlAngularGaugeSeries GaugeValue="{Binding YellowSize}" MaxRadialColumnWidth="5" Fill="#F5A623"/>
+                                        <lvc:XamlAngularGaugeSeries GaugeValue="{Binding RedSize}"    MaxRadialColumnWidth="5" Fill="#E53E3E"/>
+                                    </lvc:PieChart.Series>
+                                </lvc:PieChart>
+
+                                <!-- внутренний: сплошной gauge со значением и числом -->
+                                <lvc:PieChart Series="{Binding Series}"
+                                              MaxValue="{Binding Max}"
+                                              InitialRotation="-225"
+                                              MaxAngle="270"/>
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+
+                <DataTemplate DataType="widgets:BarChartWidgetVM">
+                    <Border Margin="6" Padding="14" CornerRadius="8" Background="#F2F4F7">
+                        <StackPanel Spacing="6">
+                            <TextBlock Text="{Binding Title}" FontWeight="Bold"/>
+                            <lvc:CartesianChart Series="{Binding Series}"
+                                                XAxes="{Binding XAxes}"
+                                                Height="200"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+
+            </ItemsControl.DataTemplates>
+        </ItemsControl>
+    </ScrollViewer>
+</UserControl>

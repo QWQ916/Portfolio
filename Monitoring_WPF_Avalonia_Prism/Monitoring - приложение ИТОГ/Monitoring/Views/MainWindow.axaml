@@ -1,0 +1,33 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Monitoring.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Monitoring.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/logo.ico"
+        Title="{Binding Title}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="DarkCyan" Padding="12">
+            <StackPanel Spacing="8">
+                <TextBlock Text="Мониторинг" Foreground="White"
+                           FontSize="18" FontWeight="Bold" Margin="0,0,0,12"/>
+
+                <Button Content="Инфраструктура" HorizontalAlignment="Stretch" Foreground="WhiteSmoke"
+                        Command="{Binding NavigateCommand}" CommandParameter="DashBoardView" Cursor="Hand"/>
+
+                <Button Content="Шаблоны" HorizontalAlignment="Stretch" Foreground="WhiteSmoke"
+                        Command="{Binding NavigateCommand}" CommandParameter="TemplatesView" Cursor="Hand"/>
+            </StackPanel>
+        </Border>
+
+        <ContentControl Grid.Column="1" Margin="10, 0, 10, 0" prism:RegionManager.RegionName="ContentRegion"/>
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+{
+	"ApiBaseUrl": "http://localhost:5005/",
+	"LoginUrl": "/api/0/auth",
+	"Login": "admin",
+	"Password": "admin",
+	"EndPointMetrics": "/api/0/monitoring/infrastructure",
+	"EndPointTemplates": "/api/0/template",
+	"EndPointClusters": "/api/0/cluster",
+	"EndPointHosts": "/api/0/node",
+	"EndPointVM": "/api/0/vm"
+}

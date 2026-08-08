@@ -1,0 +1,212 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Monitoring.ViewModels"
+             xmlns:data="using:Monitoring.Sharing.Data"
+             x:Class="Monitoring.Views.DetailView"
+             x:DataType="vm:DetailVM">
+  <StackPanel Margin="16" Spacing="16">
+    <Button Content="← Назад" Command="{Binding BackCommand}" HorizontalAlignment="Left"/>
+    <Grid ColumnDefinitions="*,Auto" Margin="0,8">
+      <TextBlock Grid.Column="0" Text="{Binding Title}" FontSize="24" FontWeight="Bold" VerticalAlignment="Center"/>
+      <Border Grid.Column="1" Background="#E8F5E9" CornerRadius="12" Padding="12,4" VerticalAlignment="Center" BorderBrush="#000000" BorderThickness="1">
+        <TextBlock Text="{Binding CountText}" Foreground="#2E7D32" FontSize="16" FontWeight="SemiBold" />
+      </Border>
+    </Grid>
+
+    <!-- ================= Список кластеров ================= -->
+    <Border CornerRadius="10" ClipToBounds="True" BorderBrush="#E2E8F0" BorderThickness="1" Background="White" IsVisible="{Binding IsCluster}">
+      <Grid RowDefinitions="Auto,*">
+        <Border Grid.Row="0" Background="#5C0A1F">
+          <Grid ColumnDefinitions="2*,1.5*,2*,2*,2.5*">
+            <Border Grid.Column="0" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Имя" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="1" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Кол-во ВМ" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="2" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Кол-во хостов" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="3" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Хранилище" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="4">
+              <TextBlock Text="Создано" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+          </Grid>
+        </Border>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" MaxHeight="450">
+          <ItemsControl ItemsSource="{Binding Clusters}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="data:Cluster">
+                <Grid ColumnDefinitions="2*,1.5*,2*,2*,2.5*">
+                  <Border Grid.Column="0" Background="#FBEAEA" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontWeight="Bold" Text="{Binding Name}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Name}"/>
+                  </Border>
+                  <Border Grid.Column="1" Background="#FDF0F0" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontStyle="Oblique" Text="{Binding VMCount}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding VMCount}"/>
+                  </Border>
+                  <Border Grid.Column="2" Background="#FCE8E6" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding NodeCount}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding NodeCount}"/>
+                  </Border>
+                  <Border Grid.Column="3" Background="#FAF0F0" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding StorageName}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding StorageName}"/>
+                  </Border>
+                  <Border Grid.Column="4" Background="#FBEEEE" BorderBrush="#E8EDF2" BorderThickness="0,0,0,1">
+                    <TextBlock Text="{Binding CreatedDate}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding CreatedDate}"/>
+                  </Border>
+                </Grid>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </ScrollViewer>
+      </Grid>
+    </Border>
+
+    <!-- ================= Список хостов ================= -->
+    <Border CornerRadius="10" ClipToBounds="True" BorderBrush="#E2E8F0" BorderThickness="1" Background="White" IsVisible="{Binding IsHost}">
+      <Grid RowDefinitions="Auto,*">
+        <Border Grid.Row="0" Background="#013220">
+          <Grid ColumnDefinitions="2*,1.5*,1.5*,1.5*,1.5*,1*,1.2*,1.2*">
+            <Border Grid.Column="0" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Имя" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="1" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Имя кластера" Foreground="White" FontWeight="SemiBold" Margin="16,12" ToolTip.Tip="Имя кластера"/>
+            </Border>
+            <Border Grid.Column="2" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Кластер Р-Хранилище" Foreground="White" FontWeight="SemiBold" Margin="16,12" ToolTip.Tip="Кластер Р-Хранилище" TextTrimming="CharacterEllipsis"/>
+            </Border>
+            <Border Grid.Column="3" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="IP адрес" Foreground="White" FontWeight="SemiBold" Margin="16,12" ToolTip.Tip="IP адрес"/>
+            </Border>
+            <Border Grid.Column="4" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="ОС" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="5" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Арх" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="6" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Статус" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="7">
+              <TextBlock Text="Статус SDK" Foreground="White" FontWeight="SemiBold" Margin="16,12" ToolTip.Tip="Статус SDK"/>
+            </Border>
+          </Grid>
+        </Border>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" MaxHeight="470">
+          <ItemsControl ItemsSource="{Binding Hosts}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="data:Host">
+                <Grid ColumnDefinitions="2*,1.5*,1.5*,1.5*,1.5*,1*,1.2*,1.2*">
+                  <Border Grid.Column="0" Background="#F0FAF0" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontWeight="Bold" Text="{Binding Hostname}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Hostname}"/>
+                  </Border>
+                  <Border Grid.Column="1" Background="#F0FAF0" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontWeight="SemiBold" Text="{Binding ClusterName}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding ClusterName}"/>
+                  </Border>
+                  <Border Grid.Column="2" Background="#F0FAF0" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontWeight="SemiBold" Text="{Binding StorageClusterName}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding StorageClusterName}"/>
+                  </Border>
+                  <Border Grid.Column="3" Background="#F1F8F1" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontStyle="Oblique" Text="{Binding IP}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding IP}"/>
+                  </Border>
+                  <Border Grid.Column="4" Background="#EAF7EA" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding OS}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding OS}"/>
+                  </Border>
+                  <Border Grid.Column="5" Background="#E8F5E9" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding Arch}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Arch}"/>
+                  </Border>
+                  <Border Grid.Column="6" Background="#F0F7F0" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding Status}" FontWeight="Bold" Foreground="{Binding HexForeColor}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Status}"/>
+                  </Border>
+                  <Border Grid.Column="7" Background="#F0F7F0" BorderBrush="#E8EDF2" BorderThickness="0,0,0,1">
+                    <TextBlock Text="{Binding SDKStatus}" FontWeight="Bold" Foreground="{Binding HexForeColorSDK}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding SDKStatus}"/>
+                  </Border>
+                </Grid>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </ScrollViewer>
+      </Grid>
+    </Border>
+
+    <!-- ================= Список ВМ ================= -->
+    <Border CornerRadius="10" ClipToBounds="True" BorderBrush="#E2E8F0" BorderThickness="1" Background="White" IsVisible="{Binding IsVM}">
+      <Grid RowDefinitions="Auto,*">
+        <Border Grid.Row="0" Background="#B8860B">
+          <Grid ColumnDefinitions="2*,1.5*,1.2*,1*,1.8*,1.2*,1.2*,1.2*,1.5*">
+            <Border Grid.Column="0" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Имя" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="1" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="IP адрес" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="2" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Статус" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="3" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Ядра" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="4" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Гостевая ОС" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="5" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Версия ОС" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="6" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="RAM" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="7" BorderBrush="#33FFFFFF" BorderThickness="0,0,1,0">
+              <TextBlock Text="Расположение" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+            <Border Grid.Column="8">
+              <TextBlock Text="Хост" Foreground="White" FontWeight="SemiBold" Margin="16,12"/>
+            </Border>
+          </Grid>
+        </Border>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" MaxHeight="450">
+          <ItemsControl ItemsSource="{Binding VMs}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="data:VirtualMachine">
+                <Grid ColumnDefinitions="2*,1.5*,1.2*,1*,1.8*,1.2*,1.2*,1.2*,1.5*">
+                  <Border Grid.Column="0" Background="#FFD700" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontWeight="Bold" Text="{Binding Name}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Name}"/>
+                  </Border>
+                  <Border Grid.Column="1" Background="#FFF8E1" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock FontStyle="Oblique" Text="{Binding IP}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding IP}"/>
+                  </Border>
+                  <Border Grid.Column="2" Background="#FFF9E6" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding Status}" FontWeight="Bold" Margin="16,10" Foreground="{Binding HexForeColor}" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Status}"/>
+                  </Border>
+                  <Border Grid.Column="3" Background="#FDF5D4" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding CoresCount}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding CoresCount}"/>
+                  </Border>
+                  <Border Grid.Column="4" Background="#FFFBEA" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding GuestOs}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding GuestOs}"/>
+                  </Border>
+                  <Border Grid.Column="5" Background="#FEF6E0" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding GuestOsVersion}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding GuestOsVersion}"/>
+                  </Border>
+                  <Border Grid.Column="6" Background="#FFF8E1" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding RamSizeText}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding RamSizeText}"/>
+                  </Border>
+                  <Border Grid.Column="7" Background="#FFC107" BorderBrush="#E8EDF2" BorderThickness="0,0,1,1">
+                    <TextBlock Text="{Binding Location}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding Location}"/>
+                  </Border>
+                  <Border Grid.Column="8" Background="#FFF9E6" BorderBrush="#E8EDF2" BorderThickness="0,0,0,1">
+                    <TextBlock Text="{Binding NodeName}" Margin="16,10" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" ToolTip.Tip="{Binding NodeName}"/>
+                  </Border>
+                </Grid>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </ScrollViewer>
+      </Grid>
+    </Border>
+
+  </StackPanel>
+</UserControl>
