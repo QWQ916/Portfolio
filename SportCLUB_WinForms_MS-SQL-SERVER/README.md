@@ -16,20 +16,20 @@
 
 ### Панель администратора
 
-![Администратор](docs/screenshots/admin.png)
+![Администратор](docs/screenshots/admin.PNG)
 
 ### Карточка игрока / тренера
 
-![Игрок](docs/screenshots/player.png)
+![Игрок](docs/screenshots/player.PNG)
 
 
 ### Карточка добавления игрока / тренера
 
-![Тренер](docs/screenshots/trener.png)
+![Тренер](docs/screenshots/trener.PNG)
 
 ### Карточка добавления соревнования (кандидаты сами подбираются в хранимой процедуре в БД)
 
-![Тренер](docs/screenshots/comp.png)
+![Тренер](docs/screenshots/comp.PNG)
 
 ---
 
