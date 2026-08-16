@@ -147,4 +147,4 @@ SportCLUB_WinForms_MS-SQL-SERVER/
 
 ---
 
-*Автор: Иван Широковских · GitHub: [https://github.com/QWQ916/Portfolio]*
+*Автор: Иван Ш. · GitHub: [https://github.com/QWQ916/Portfolio]*
