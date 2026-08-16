@@ -1,0 +1,98 @@
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe.config
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\bin\Debug\SportCLUB.pdb
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.AssemblyReference.cache
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Form1.resources
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Properties.Resources.resources
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.GenerateResource.cache
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.CoreCompileInputs.cache
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.exe
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.pdb
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.exe.config
+C:\Users\user\source\repos\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe.config
+C:\Users\user\source\repos\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe
+C:\Users\user\source\repos\SportCLUB\SportCLUB\bin\Debug\SportCLUB.pdb
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.exe.config
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Form1.resources
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Properties.Resources.resources
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.GenerateResource.cache
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.exe
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.pdb
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AdminsForm.resources
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForCoach.resources
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForUser.resources
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AdminsForm.resources
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForCoach.resources
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForUser.resources
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe.config
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\bin\Debug\SportCLUB.pdb
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.AssemblyReference.cache
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.exe.config
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AdminsForm.resources
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForCoach.resources
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForUser.resources
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Form1.resources
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Properties.Resources.resources
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.GenerateResource.cache
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.CoreCompileInputs.cache
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.exe
+D:\Учебная практика - SportCLUB\SportCLUB\SportCLUB\obj\Debug\SportCLUB.pdb
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddPlayer.resources
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddCoach.resources
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddCompetition.resources
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddCoach.resources
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddCompetition.resources
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddPlayer.resources
+C:\Users\user\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoComp.resources
+C:\Users\Bush\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoComp.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe.config
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\bin\Debug\SportCLUB.pdb
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.AssemblyReference.cache
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.SuggestedBindingRedirects.cache
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddCoach.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddCompetition.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddPlayer.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AdminsForm.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoComp.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForCoach.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForUser.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Form1.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Properties.Resources.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.GenerateResource.cache
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.CoreCompileInputs.cache
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.exe
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.pdb
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.CoachForm.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ShowInfoPlayer.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddInjures.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.SetPlayer.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.PlayerForm.resources
+C:\Users\BooM\source\repos\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeCoach.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe.config
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\bin\Debug\SportCLUB.exe
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\bin\Debug\SportCLUB.pdb
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.AssemblyReference.cache
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.exe.config
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddCoach.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddCompetition.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddInjures.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AddPlayer.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.AdminsForm.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeCoach.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoComp.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForCoach.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ChangeInfoForUser.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.CoachForm.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Form1.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.PlayerForm.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.Properties.Resources.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.SetPlayer.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.ShowInfoPlayer.resources
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.GenerateResource.cache
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.csproj.CoreCompileInputs.cache
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.exe
+C:\Users\Bush\Desktop\SportCLUB_WinForms_MS-SQL-SERVER\SportCLUB\SportCLUB\obj\Debug\SportCLUB.pdb

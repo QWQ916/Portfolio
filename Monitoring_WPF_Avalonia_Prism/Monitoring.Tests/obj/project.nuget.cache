@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PB1vetnlZ9I=",
+  "dgSpecHash": "N0pWh6TJKdI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bush\\Desktop\\Monitoring - приложение ИТОГ\\Monitoring.Tests\\Monitoring.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\Monitoring.Tests\\Monitoring.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bush\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Bush\\.nuget\\packages\\avalonia\\11.0.5\\avalonia.11.0.5.nupkg.sha512",

@@ -49,3 +49,17 @@ C:\Users\Bush\Desktop\Monitoring - приложение ИТОГ\Monitoring.Shar
 C:\Users\Bush\Desktop\Monitoring - приложение ИТОГ\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\refint\Monitoring.Sharing.dll
 C:\Users\Bush\Desktop\Monitoring - приложение ИТОГ\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Monitoring.Sharing.pdb
 C:\Users\Bush\Desktop\Monitoring - приложение ИТОГ\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\ref\Monitoring.Sharing.dll
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\bin\Debug\net6.0\Monitoring.Sharing.deps.json
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\bin\Debug\net6.0\Monitoring.Sharing.dll
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\bin\Debug\net6.0\Monitoring.Sharing.pdb
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Monitoring.Sharing.csproj.AssemblyReference.cache
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Avalonia\Resources.Inputs.cache
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Monitoring.Sharing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Monitoring.Sharing.AssemblyInfoInputs.cache
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Monitoring.Sharing.AssemblyInfo.cs
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Monitoring.Sharing.csproj.CoreCompileInputs.cache
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Monitoring.Sharing.sourcelink.json
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Monitoring.Sharing.dll
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\refint\Monitoring.Sharing.dll
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\Monitoring.Sharing.pdb
+C:\Users\Bush\Documents\GitHub\Portfolio\Monitoring_WPF_Avalonia_Prism\Monitoring.Sharing\Monitoring.Sharing\obj\Debug\net6.0\ref\Monitoring.Sharing.dll

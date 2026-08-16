@@ -27,7 +27,7 @@ namespace Monitoring.Infrastructure
     {
         private readonly HttpClient _client;
         private readonly HttpClientHandler _handler;
-        private HttpResponseMessage _authResponse;
+        private HttpResponseMessage? _authResponse;
         private readonly CookieContainer _cookieContainer = new CookieContainer();
         private readonly IMapper _mapper;
 
@@ -37,7 +37,7 @@ namespace Monitoring.Infrastructure
 
         public ApiService(IMapper mapper, IAppConfig config)
         {
-            // 0. Натсройка маппера для сопоставления свойств
+            // 0. Настройка маппера для сопоставления свойств
             _mapper = mapper;
             _config = config;
             _loginUrl = _config.Get("LoginUrl");
@@ -49,7 +49,7 @@ namespace Monitoring.Infrastructure
                 CookieContainer = _cookieContainer,
             };
 
-            // 1.1. Настройка клиента
+            // 2. Настройка клиента
             _client = new HttpClient(_handler)
             {
                 BaseAddress = new Uri(_config.Get("ApiBaseUrl")),
@@ -60,7 +60,7 @@ namespace Monitoring.Infrastructure
 
         public async Task AuthAsync()
         {
-            // 2. Формируем тело для авторизации (аналог $AuthBody)
+            // 3. Формируем тело для авторизации (аналог $AuthBody)
             var authBody = new
             {
                 login = _config.Get("Login"),
@@ -72,7 +72,7 @@ namespace Monitoring.Infrastructure
             var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
             try
             {
-                // 3. Выполняем POST-запрос для авторизации
+                // 4. Выполняем POST-запрос для авторизации
                 Debug.WriteLine("Авторизация...");
  
                 HttpResponseMessage response = await _client.PostAsync(_loginUrl, content);

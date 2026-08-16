@@ -62,6 +62,12 @@ namespace Monitoring.Models.Widgets
             set { _value = value; BuildGauge(); }
         }
 
+        // Внутренняя дуга-зоны: зелёная/жёлтая/красная секции
+        public double GreenSize => Positive(_yellowFrom);
+        public double YellowSize => Positive(_redFrom - _yellowFrom);
+        public double RedSize => Positive(Max - _redFrom);
+
+        private static double Positive(double v) => v > 0 ? v : 0;
         private void BuildGauge()
         {
             var color =
@@ -88,13 +94,6 @@ namespace Monitoring.Models.Widgets
                     s.Fill = new SolidColorPaint(new SKColor(230, 230, 230));
                 }));
         }
-
-        // Внутренняя дуга-зоны: зелёная/жёлтая/красная секции
-        public double GreenSize => Positive(_yellowFrom);
-        public double YellowSize => Positive(_redFrom - _yellowFrom);
-        public double RedSize => Positive(Max - _redFrom);
-
-        private static double Positive(double v) => v > 0 ? v : 0;
 
         // Цвет заднего фона
         public string BackColor {

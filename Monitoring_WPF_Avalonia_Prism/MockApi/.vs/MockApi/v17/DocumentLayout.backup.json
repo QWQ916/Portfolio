@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Bush\\Desktop\\Monitoring - \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0418\u0422\u041E\u0413\\MockApi\\",
+  "WorkspaceRootPath": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\MockApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{229C3FD6-29C8-2756-195A-B97AB4283A31}|MockApi.csproj|c:\\users\\bush\\desktop\\monitoring - \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0438\u0442\u043E\u0433\\mockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{229C3FD6-29C8-2756-195A-B97AB4283A31}|MockApi.csproj|c:\\users\\bush\\documents\\github\\portfolio\\monitoring_wpf_avalonia_prism\\mockapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{229C3FD6-29C8-2756-195A-B97AB4283A31}|MockApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Bush\\Desktop\\Monitoring - \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0418\u0422\u041E\u0413\\MockApi\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\MockApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Bush\\Desktop\\Monitoring - \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0418\u0422\u041E\u0413\\MockApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\MockApi\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAIsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-08T17:24:16.7Z",
               "EditorCaption": ""

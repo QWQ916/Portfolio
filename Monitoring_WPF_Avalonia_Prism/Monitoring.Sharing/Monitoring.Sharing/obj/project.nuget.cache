@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3+lofm4XuIw=",
+  "dgSpecHash": "RN7Oc7nyY0A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bush\\Desktop\\Monitoring - приложение ИТОГ\\Monitoring.Sharing\\Monitoring.Sharing\\Monitoring.Sharing.csproj",
+  "projectFilePath": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\Monitoring.Sharing\\Monitoring.Sharing\\Monitoring.Sharing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bush\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Bush\\.nuget\\packages\\avalonia\\11.0.0\\avalonia.11.0.0.nupkg.sha512",
@@ -35,9 +35,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "У пакета \"AutoMapper\" 12.0.1 есть известная уязвимость https://github.com/advisories/GHSA-rvv3-g6hj-g44x (уровень серьезности: высокий)",
-      "projectPath": "C:\\Users\\Bush\\Desktop\\Monitoring - приложение ИТОГ\\Monitoring.Sharing\\Monitoring.Sharing\\Monitoring.Sharing.csproj",
+      "projectPath": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\Monitoring.Sharing\\Monitoring.Sharing\\Monitoring.Sharing.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Bush\\Desktop\\Monitoring - приложение ИТОГ\\Monitoring.Sharing\\Monitoring.Sharing\\Monitoring.Sharing.csproj",
+      "filePath": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\Monitoring.Sharing\\Monitoring.Sharing\\Monitoring.Sharing.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net6.0"

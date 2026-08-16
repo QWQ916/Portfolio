@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bush\\Desktop\\Monitoring - приложение ИТОГ\\MockApi\\MockApi.csproj",
+      "projectUniqueName": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\MockApi\\MockApi.csproj",
       "projectName": "MockApi",
-      "projectPath": "C:\\Users\\Bush\\Desktop\\Monitoring - приложение ИТОГ\\MockApi\\MockApi.csproj",
+      "projectPath": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\MockApi\\MockApi.csproj",
       "packagesPath": "C:\\Users\\Bush\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bush\\Desktop\\Monitoring - приложение ИТОГ\\MockApi\\obj\\",
+      "outputPath": "C:\\Users\\Bush\\Documents\\GitHub\\Portfolio\\Monitoring_WPF_Avalonia_Prism\\MockApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
