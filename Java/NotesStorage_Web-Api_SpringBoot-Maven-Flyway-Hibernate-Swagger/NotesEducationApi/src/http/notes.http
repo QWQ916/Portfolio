@@ -1,0 +1,17 @@
+### Создать заметку
+POST http://localhost:2121/api/notes
+Content-Type: application/json
+
+{
+"title": "Заметка из IDEA",
+"text": "Так гораздо удобнее, чем curl"
+}
+
+### Все заметки
+GET http://localhost:2121/api/notes
+### Одна заметка
+GET http://localhost:2121/api/notes/1
+### Поиск
+GET http://localhost:2121/api/notes?q=заметка
+### Удалить
+DELETE http://localhost:2121/api/notes/4

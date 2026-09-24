@@ -1,0 +1,24 @@
+server:
+  port: 2121
+
+spring:
+  application:
+    name: notes
+
+  datasource:
+    url: jdbc:postgresql://localhost:5400/notes
+    username: notes
+    password: notes
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    # org.flywaydb: debug
