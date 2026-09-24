@@ -57,19 +57,6 @@ docker compose up -d
 Остановить базу: `docker compose down` (данные сохранятся в томе)
 Удалить вместе с данными: `docker compose down -v`
 
-### Проверка из PowerShell
-
-В корне лежит `api.ps1` — набор функций-обёрток, чтобы не воевать
-с экранированием кавычек в Windows:
-
-```powershell
-. .\api.ps1          # подключить (точка, пробел, путь)
-
-New-Note "Заголовок" "Текст"
-Get-Notes
-Remove-Note 1
-```
-
 ---
 
 ## API
